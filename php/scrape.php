@@ -4,7 +4,6 @@
  * @author Alex Austin
  */
 include "phpmanager.php";
-include "utils.json_serializer.php";
 
 $val = $_POST['value'];
 $out = $dellScraper->scrape($val);
@@ -15,6 +14,5 @@ if (!isset($out)) {
 } else {
     $data = array($out->getName(), $out->getPrice(), $out->getProductMeta()->getImageAddress());
 }
-
 echo json_encode($data);
 ?>
