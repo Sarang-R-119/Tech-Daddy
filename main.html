@@ -8,21 +8,27 @@
     <title>TechDaddy</title>
 </head>
 <body>
+    <!-- Basically header for site -->
     <div class="top-bar">
+        <!-- Menu icon -->
         <div class="menu">
             <img src="assets/images/menu.png" alt="menu""></li>
         </div>
+        <!-- Tech Daddy Logo -->
         <div class="logo">
             <a href=""><img src="assets/images/td.png" alt="logo""></li></a>
             <h1>Your Personal Tech Consultant</h1>
         </div>
+        <!-- Login button -->
         <div class="buttons">
-            <!-- <a href="#" onclick="myForm">Log In</a> -->
+            <!-- Script at bottom of html -->
             <button onclick="openForm()">Log In</button>
         </div>
     </div>
 
+    <!-- The body content -->
     <div class="content">
+        <!-- The form that pops up when Log In button is clickled  -->
         <div class="form-popup" id="myForm">
             <form action="/action_page.php" class="form-container">
               <h1>Login</h1>
@@ -33,15 +39,17 @@
               <label for="psw"><b>Password</b></label>
               <input type="password" placeholder="Enter Password" name="psw" required>
           
-              <button type="submit" class="btn">Login</button>
-              <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+              <button type="submit" class="button">Login</button>
+              <button type="submit" class="button" onclick="closeForm()">Close</button>
             </form>
           </div>
+          <!-- 1st content with button to find device -->
         <div class="content1">
             <div class="content-button">
                 <a href="#">Find Your Device</a>
             </div>
         </div>
+        <!-- 2nd content with list of popular devices -->
         <div class="content2">
             <h2>Popular Devices</h2>
             <div class="devices">
@@ -55,6 +63,7 @@
         </div>
     </div>
     
+    <!-- Footer with information such as about us -->
     <div class="footbar">
         <footer>
             <p>
@@ -66,6 +75,7 @@
         </footer>
     </div>
 
+    <!-- Script to get popup table up and closed -->
     <script>
         function openForm() {
             document.getElementById("myForm").style.display = "block";
