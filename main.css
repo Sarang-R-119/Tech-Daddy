@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+@import url(href=(https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap);
 /* Font for entire page */
 * {
   font-size: 16px;
@@ -20,10 +20,15 @@ body {
   background-color: #ed6d1e;
 }
 /* Header menu icon */
-.top-bar .menu img {
-  padding-top: 1rem;
-  margin: 0px 20px;
-  width: 3rem;
+.top-bar .menu button {
+  background-image: url(./assets/images/menu.png);
+  background-size: cover;
+  background-color: #ed6d1e;
+  border: none;
+  margin: 10px 20px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
 }
 
 /* Header logo image and caption  */
@@ -35,7 +40,8 @@ body {
 /* Header logo image */
 .top-bar .logo img {
   padding-top: 1rem;
-  width: 12rem;
+  width: 150px;
+  cursor: pointer;
 }
 
 /* Header logo caption */
@@ -58,7 +64,6 @@ body {
 
 /* Body content */
 .content {
-  margin-top: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -66,10 +71,31 @@ body {
   align-items: center;
 }
 
+.content .menu {
+  display: none;
+  width: 100%;
+  height: 72vh;
+  background-color: #ed6d1e;
+}
+
+.content .menu ul {
+  list-style-type: none;
+  text-align: center;
+  padding-left: 0%;
+  margin-left: 0%;
+}
+
+.content .menu li {
+  font-size: 80px;
+}
+
 /* First content: box with button to find device */
 .content .content1 {
-  padding: 3rem;
-  width: 149vh;
+  display: block;
+  margin-top: 30px;
+  padding: 1rem;
+  width: 80%;
+  max-width: 80%;
   background-color: #800000;
   border: 1px solid black;
   border-radius: 10px;
@@ -83,17 +109,19 @@ body {
   background-color: gray;
   border: 1px solid black;
   color: black;
-  width: 50vh;
+  width: 50%;
   padding-top: 5vh;
   padding-bottom: 5vh;
-  font-size: 3vh;
+  font-size: 30px;
 }
 
 /* Second content: box with list of popular devices */
 .content .content2 {
-  margin-top: 3rem;
+  display: block;
+  margin-top: 30px;
   padding: 1rem;
-  max-width: 150vh;
+  width: 80%;
+  max-width: 80%;
   background-color: #800000;
   border: 1px solid black;
   border-radius: 10px;
@@ -101,7 +129,7 @@ body {
 
 /* Heading for second content */
 .content .content2 h2 {
-  font-size: 3vh;
+  font-size: 30px;
   font-weight: normal;
 }
 
@@ -115,12 +143,18 @@ body {
 
 /* Style for devices images*/
 .content .content2 img {
-  max-width: 30vh;
+  width: 16.5%;
+  max-width: 16.5%;
+  
 }
 
+.footbar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
 /* Footer styling */
 .footbar footer {
-  margin-top: 3rem;
   text-decoration: none;
   color: black;
   text-align: center;
@@ -138,35 +172,71 @@ body {
 .content .form-popup {
   display: none;
   position: fixed;
-  border: 3px solid black;
+  /* border: 3px solid black; */
+  border-radius: 15px;
   z-index: 9;
 }
 
 /* Container for form */
 .content .form-container {
-  max-width: 500px;
-  padding: 10px;
-  background-color: #800000;
+  width: 1200px;
+  max-width: 1200px;
+  padding: 25px 10px 25px 10px;
+  height: 60vh;
+  backdrop-filter: blur(10px);
+  border: 1px solid black;
+}
+
+.content .form-container h1 {
+  font-size: 30px;
+  color: black;
+  margin: 0%;
 }
 
 /* Style for text box for password and username */
 .content .form-container input[type="text"],
 .form-container input[type="password"] {
-  width: 100%;
+  width: 50%;
   padding: 15px;
   margin: 5px 0 22px 0;
   border: none;
-  background: #f1f1f1;
+  background: white;
 }
 
 /* Style for button to submit form */
 .content .form-container .button {
-  background-color: #4caf50;
-  color: white;
+  background-color: #ed6d1e;
+  color: black;
   padding: 16px 20px;
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: 20%;
   margin-bottom: 10px;
   opacity: 0.8;
 }
+
+.content .form-container .buttonGoogle {
+  background-color: white;
+  color: black;
+  padding: 16px 10px;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+  position: relative;
+  text-align: right;
+}
+
+.content .form-container .buttonFB {
+  background-color: #3b5998;
+  color: white;
+  padding: 16px 10px;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+  text-align: right;
+  position: relative;
+};;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

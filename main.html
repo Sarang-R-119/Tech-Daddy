@@ -12,7 +12,7 @@
     <div class="top-bar">
         <!-- Menu icon -->
         <div class="menu">
-            <img src="assets/images/menu.png" alt="menu""></li>
+            <button id="menu-button"></button>
         </div>
         <!-- Tech Daddy Logo -->
         <div class="logo">
@@ -27,30 +27,42 @@
     </div>
 
     <!-- The body content -->
-    <div class="content">
+    <div class="content" id="content">
+        <!-- Menu when button clicked -->
+        <div class="menu" id="menu1" >
+            <ul>
+                <li>Laptops</li>
+                <li>Smartphones</li>
+                <li>Desktops</li>
+                <li>Accesories</li>
+                <li>????</li>
+            </ul>
+        </div>
         <!-- The form that pops up when Log In button is clickled  -->
         <div class="form-popup" id="myForm">
             <form action="/action_page.php" class="form-container">
-              <h1>Login</h1>
-          
-              <label for="email"><b>Email</b></label>
+              <h1>Sign In</h1><br>
+              <!-- <label for="email"><b>Email</b></label> -->
               <input type="text" placeholder="Enter Email" name="email" required>
           
-              <label for="psw"><b>Password</b></label>
+              <!-- <label for="psw"><b>Password</b></label> -->
               <input type="password" placeholder="Enter Password" name="psw" required>
-          
+                <br>
+                <button type="submit" class="button">Sign Up</button>
               <button type="submit" class="button">Login</button>
-              <button type="submit" class="button" onclick="closeForm()">Close</button>
+              <button type="submit" class="button" onclick="closeForm()">Close</button><br>
+              <button type="submit" class="buttonGoogle"><img src="assets/images/google.png" alt="google-logo" style="width: 15%;position: absolute; top: 20%; left: 5%;">Sign In with Google</button><br>
+              <button type="submit" class="buttonFB"><img src="assets/images/fb.png" alt="fb-logo" style="width: 15%;position: absolute; top: 20%; left: 5%;">  Sign In with Facebook</button>
             </form>
           </div>
           <!-- 1st content with button to find device -->
-        <div class="content1">
+        <div class="content1" id="content1">
             <div class="content-button">
                 <a href="#">Find Your Device</a>
             </div>
         </div>
         <!-- 2nd content with list of popular devices -->
-        <div class="content2">
+        <div class="content2" id="content2">
             <h2>Popular Devices</h2>
             <div class="devices">
                     <img src="assets/images/prev.png" alt="prev" style="height: 100px;transform: scale(0.7)">
@@ -83,6 +95,22 @@
         function closeForm() {
             document.getElementById("myForm").style.display = "none";
         }
+
+        var el = document.getElementById("menu-button");
+        var currState = false;
+        el.addEventListener("click", function(){
+            currState = !currState;
+            var popup = document.getElementById("myForm");
+            popupStyle = window.getComputedStyle(popup),
+            displayS = popupStyle.display;
+            if (displayS == 'block') {document.getElementById("myForm").style.display = "none";}
+            document.getElementById("menu1").style.display=(currState ? "block":"none");
+            document.getElementById("content1").style.display=(currState ? "none":"block");
+            document.getElementById("content2").style.display=(currState ? "none":"block");
+            el.style.backgroundImage=(currState ? "url(./assets/images/back.png)":"url(./assets/images/menu.png)");
+            }
+        );
+
     </script>
 </body>
 </html>
