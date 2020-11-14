@@ -1,0 +1,172 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+/* Font for entire page */
+* {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+/* Remove margin and padding for body */
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
+/* Header css */
+.top-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #ed6d1e;
+}
+/* Header menu icon */
+.top-bar .menu img {
+  padding-top: 1rem;
+  margin: 0px 20px;
+  width: 3rem;
+}
+
+/* Header logo image and caption  */
+.top-bar .logo {
+  text-align: center;
+  width: 100rem;
+}
+
+/* Header logo image */
+.top-bar .logo img {
+  padding-top: 1rem;
+  width: 12rem;
+}
+
+/* Header logo caption */
+.top-bar .logo h1 {
+  font-size: 30px;
+}
+
+/* Header sign in button */
+.top-bar .buttons button {
+  background-color: grey;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px 20px 10px 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 5rem;
+}
+
+/* Body content */
+.content {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+
+/* First content: box with button to find device */
+.content .content1 {
+  padding: 3rem;
+  width: 149vh;
+  background-color: #800000;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+/* Button in content1  */
+.content .content1 .content-button a {
+  text-align: center;
+  text-decoration: none;
+  appearance: button;
+  background-color: gray;
+  border: 1px solid black;
+  color: black;
+  width: 50vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  font-size: 3vh;
+}
+
+/* Second content: box with list of popular devices */
+.content .content2 {
+  margin-top: 3rem;
+  padding: 1rem;
+  max-width: 150vh;
+  background-color: #800000;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+/* Heading for second content */
+.content .content2 h2 {
+  font-size: 3vh;
+  font-weight: normal;
+}
+
+/* Horizontal list of devices */
+.content .content2 .devices {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+
+/* Style for devices images*/
+.content .content2 img {
+  max-width: 30vh;
+}
+
+/* Footer styling */
+.footbar footer {
+  margin-top: 3rem;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  background-color: #ed6d1e;
+  padding: 1rem;
+}
+
+/* Footer text styling */
+.footbar footer p a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Form for login, initially display none when signin button not pressed */
+.content .form-popup {
+  display: none;
+  position: fixed;
+  border: 3px solid black;
+  z-index: 9;
+}
+
+/* Container for form */
+.content .form-container {
+  max-width: 500px;
+  padding: 10px;
+  background-color: #800000;
+}
+
+/* Style for text box for password and username */
+.content .form-container input[type="text"],
+.form-container input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Style for button to submit form */
+.content .form-container .button {
+  background-color: #4caf50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}

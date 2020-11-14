@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/td.png">
+    <link rel="stylesheet" href="main.css" />
+    <title>TechDaddy</title>
+</head>
+<body>
+    <!-- Basically header for site -->
+    <div class="top-bar">
+        <!-- Menu icon -->
+        <div class="menu">
+            <img src="assets/images/menu.png" alt="menu"></li>
+        </div>
+        <!-- Tech Daddy Logo -->
+        <div class="logo">
+            <a href=""><img src="assets/images/td.png" alt="logo"></li></a>
+            <h1>Your Personal Tech Consultant</h1>
+        </div>
+        <!-- Login button -->
+        <div class="buttons">
+            <!-- Script at bottom of html -->
+            <button onclick="openForm_login()">Log In</button>
+            <button onclick="openForm_signup()">Sign up</button>
+        </div>
+    </div>
+
+    <!-- The body content -->
+    <div class="content">
+        <!-- The form that pops up when Log In button is clickled  -->
+        <div class="form-popup" id="myForm">
+            <form id = "login-form" class="form-container">
+              <h1>Login</h1>
+          
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" id = "login-email" name="email" required>
+          
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" id = "login-password" name="psw" required>
+          
+              <button type="submit" class="button" id = "#login" >Login</button>
+              <!-- <button type="submit" class="button" onclick="closeForm()">Close</button> -->
+            </form>
+        </div>
+
+        <div class="form-popup" id="form-signup">
+            <form id = "signup-form" class="form-container">
+              <h1>Sign Up</h1>
+          
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" id = "signup-email" name="email" required>
+          
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" id = "signup-password" name="psw" required>
+          
+              <button type="submit" class="button" id = "#signup" >Sign Up</button>
+              <!-- <button type="submit" class="button" onclick="closeForm()">Close</button> -->
+            </form>
+        </div>
+        
+          <!-- 1st content with button to find device -->
+        <div class="content1">
+            <div class="content-button">
+                <a href="#">Find Your Device</a>
+            </div>
+        </div>
+        <!-- 2nd content with list of popular devices -->
+        <div class="content2">
+            <h2>Popular Devices</h2>
+            <div class="devices">
+                    <img src="assets/images/prev.png" alt="prev" style="height: 100px;transform: scale(0.7)">
+                    <img src="assets/images/dell.png" alt="dell">
+                    <img src="assets/images/mac.png" alt="mac">
+                    <img src="assets/images/samsung.png" alt="samsung">
+                    <img src="assets/images/surface.png" alt="">
+                    <img src="assets/images/next.png" alt="next" style="height: 100px;transform: scale(0.7)">
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer with information such as about us -->
+    <div class="footbar">
+        <footer>
+            <p>
+                <a href="#">Contact Us</a> | 
+                <a href="#">About Us</a> |
+                <a href="#">Account</a> |
+                <a href="#">Support</a>
+            </p>
+        </footer>
+    </div>
+
+    <!-- Loading the Firebase Authentication -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <!-- Core functionality -->
+        <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+    <!-- Authentication -->
+        <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-auth.js"></script>
+    <!-- Firestore -->
+        <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyC5aag88-iEClwLUrIxy5NlJE_RYgR3U74",
+            authDomain: "tech-daddy-sample.firebaseapp.com",
+            databaseURL: "https://tech-daddy-sample.firebaseio.com",
+            projectId: "tech-daddy-sample",
+            storageBucket: "tech-daddy-sample.appspot.com",
+            // messagingSenderId: "987204536377",
+            appId: "1:987204536377:web:5841d6f043c2e72994a5e8"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        // Make auth and firestore references
+        // Initializing the auth service and storing the reference in the constant auth.
+        const auth = firebase.auth();
+        const db = firebase.firestore();
+
+        // Version 5 of firebase, updating the settings
+        // Updating the system to know that we are using timestamps
+        db.settings({ timestampsInSnapshots: true});
+    </script>
+
+    <!-- Script to get popup table up and closed -->
+    <script src="scripts/index.js"></script>
+    <script src="scripts/auth.js"></script>
+</body>
+</html>
