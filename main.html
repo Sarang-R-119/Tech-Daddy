@@ -1,127 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/images/td.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/images/td.png" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="main.css" />
     <title>TechDaddy</title>
-</head>
-<body>
-    <!-- Basically header for site -->
-    <div class="top-bar">
-        <!-- Menu icon -->
-        <div class="menu">
-            <button id="menu-button"></button>
-        </div>
-        <!-- Tech Daddy Logo -->
-        <div class="logo">
-            <a href=""><img src="assets/images/td.png" alt="logo""></li></a>
-            <h1>Your Personal Tech Consultant</h1>
-        </div>
-        <!-- Login button -->
-        <div class="buttons">
-            <!-- Script at bottom of html -->
-            <button onclick="openForm()">Log In</button>
-        </div>
-    </div>
-
-    <!-- The body content -->
-    <div class="content" id="content">
-        <!-- Menu when button clicked -->
-        <div class="menu" id="menu1" >
-            <ul>
-                <li>Laptops</li>
-                <li>Smartphones</li>
-                <li>Desktops</li>
-                <li>Accesories</li>
-                <li>????</li>
-            </ul>
-        </div>
-        <!-- The form that pops up when Log In button is clickled  -->
-        <div class="form-popup" id="myForm">
-            <form action="/action_page.php" class="form-container">
-              <h1>Sign In</h1><br>
-              <!-- <label for="email"><b>Email</b></label> -->
-              <input type="text" placeholder="Enter Email" name="email" required>
-          
-              <!-- <label for="psw"><b>Password</b></label> -->
-              <input type="password" placeholder="Enter Password" name="psw" required>
-                <br>
-                <button type="submit" class="button">Sign Up</button>
-              <button type="submit" class="button">Login</button>
-              <button type="submit" class="button" onclick="closeForm()">Close</button><br>
-              <button type="submit" class="buttonGoogle"><img src="assets/images/google.png" alt="google-logo" style="width: 15%;position: absolute; top: 20%; left: 5%;">Sign In with Google</button><br>
-              <button type="submit" class="buttonFB"><img src="assets/images/fb.png" alt="fb-logo" style="width: 15%;position: absolute; top: 20%; left: 5%;">  Sign In with Facebook</button>
-            </form>
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <div id="body">
+        <div class="container-fluid P-0">
+            <div
+              class="row justify-content-between"
+              style="background-color: #ed6d1e"
+            >
+              <div class="col-md-4">
+                <div class="top-bar menu">
+                  <button id="menu-button" class="btn btn-sucess float-left"></button>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="top-bar logo">
+                  <a href=""><img src="assets/images/td.png" alt="logo""></a>
+                  <h1>Your Personal Tech Consultant</h1>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="top-bar buttons">
+                  <!-- Script at bottom of html -->
+                  <button onclick="openForm()" class="btn btn-sucess float-right">
+                    Log In
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
-          <!-- 1st content with button to find device -->
-        <div class="content1" id="content1">
-            <div class="content-button">
-                <a href="device-list.html">Find Your Device</a>
+      
+            <div class="container-fluid p-0">
+              <div class="row justify-content-center no-gutters content"">
+                  <div class="col-12" id="content">
+                    <div class="menu" id="menu1">
+                      <ul>
+                        <li>Laptops</li>
+                        <li>Smartphones</li>
+                        <li>Desktops</li>
+                        <li>Accesories</li>
+                        <li>????</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
             </div>
-        </div>
-        <!-- 2nd content with list of popular devices -->
-        <div class="content2" id="content2">
-            <h2>Popular Devices</h2>
-            <div class="devices">
-                    <img src="assets/images/prev.png" alt="prev" style="height: 100px;transform: scale(0.7)">
-                    <img src="assets/images/dell.png" alt="dell">
-                    <img src="assets/images/mac.png" alt="mac">
-                    <img src="assets/images/samsung.png" alt="samsung">
-                    <img src="assets/images/surface.png" alt="">
-                    <img src="assets/images/next.png" alt="next" style="height: 100px;transform: scale(0.7)">
-            </div>
-        </div>
+      
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col">
+                    <form
+                      action="/action_page.php"
+                      class="content form-popup"
+                      id="myForm"
+                      style="width: 100%"
+                    >
+                      <h1>Sign In</h1>
+                      <hr class="clearfix w-100 pb-3" />
+                      <div class="form-group row justify-content-center">
+                        <div class="col-6">
+                          <input
+                            type="email"
+                            class="form-control"
+                            placeholder="Enter Email"
+                            name="email"
+                            required
+                          />
+                        </div>
+                      </div>
+                      <div class="form-group row justify-content-center">
+                        <div class="col-6">
+                          <input
+                            type="password"
+                            class="form-control"
+                            placeholder="Enter Password"
+                            name="psw"
+                            required
+                          />
+                        </div>
+                      </div>
+                      <hr class="clearfix w-100 pb-3" />
+                      <div class="row">
+                        <div class="col-md-3 offset-md-2">
+                          <button type="submit" class="button">Sign Up</button>
+                        </div>
+                        <div class="col-md-2">
+                          <button type="submit" class="button">Login</button>
+                        </div>
+                        <div class="col-md-3">
+                          <button type="submit" class="button" onclick="closeForm()">
+                            Close</button
+                          ><br />
+                        </div>
+                      </div>
+                      <div class="row justify-content-center">
+                        <div class="col-2">
+                          <button type="submit" class="buttonGoogle">
+                            <img
+                              src="assets/images/google.png"
+                              alt="google-logo"
+                              style="width: 10%"
+                            />
+                            Sign In with Google</button
+                          ><br />
+                        </div>
+                      </div>
+                      <div class="row justify-content-center">
+                        <div class="col-2">
+                          <button type="submit" class="buttonFB">
+                            <img
+                              src="assets/images/fb.png"
+                              alt="fb-logo"
+                              style="width: 10%"
+                            />
+                            Sign In with Facebook
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+            
+          </div>
+      
+          <div class="container-fluid p-0">
+              <div class="d-flex justify-content-center align-items-center content">
+                  <div class="col-10">
+                    <div class="content1" id="content1">
+                      <div class="content-button">
+                        <a href="device-list.html">Find Your Device</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </div>
+      
+          <div class="container-fluid p-0">
+              <div class="d-flex justify-content-center align-items-center content">
+                  <!-- 1st content with button to find device -->
+                  <div class="col-10">
+                    <div class="content2" id="content2">
+                      <h2>Popular Devices</h2>
+                      <div class="devices">
+                        <img
+                          src="assets/images/prev.png"
+                          alt="prev"
+                          style="height: 100px; transform: scale(0.7)"
+                        />
+                        <img src="assets/images/dell.png" alt="dell" />
+                        <img src="assets/images/mac.png" alt="mac" />
+                        <img src="assets/images/samsung.png" alt="samsung" />
+                        <img src="assets/images/surface.png" alt="" />
+                        <img
+                          src="assets/images/next.png"
+                          alt="next"
+                          style="height: 100px; transform: scale(0.7)"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </div>
+          <!-- <div class="mt-xl-3"></div>
+          <div class="mt-xl-5"></div> -->
+       
+          <!-- Footer with information such as about us -->
+          <div class="container-fluid p-0">
+            <footer class="page-footer footbar" style="background-color: #ed6d1e">
+              <div class="row mt-auto no-gutters">
+                  <div class="col-md-2 offset-md-1">
+                      <a href="#">Contact Us</a>
+                  </div>
+                  <div class="col-md-3">
+                      <a href="#">About Us</a>
+                  </div>
+                  <div class="col-md-3">
+                      <a href="#">Account</a>
+                  </div>
+                  <div class="col-md-2">
+                      <a href="#">Support</a>
+                  </div>
+              </div>
+            </footer>
+          </div>
+      
+          <!-- Loading the Firebase Authentication -->
+          <!-- The core Firebase JS SDK is always required and must be listed first -->
+          <!-- Core functionality -->
+          <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+          <!-- Authentication -->
+          <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-auth.js"></script>
+          <!-- Firestore -->
+          <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+          <!-- Script to get popup table up and closed -->
+      
+          <script>
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            var firebaseConfig = {
+              apiKey: "AIzaSyC5aag88-iEClwLUrIxy5NlJE_RYgR3U74",
+              authDomain: "tech-daddy-sample.firebaseapp.com",
+              databaseURL: "https://tech-daddy-sample.firebaseio.com",
+              projectId: "tech-daddy-sample",
+              storageBucket: "tech-daddy-sample.appspot.com",
+              // messagingSenderId: "987204536377",
+              appId: "1:987204536377:web:5841d6f043c2e72994a5e8",
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+      
+            // Make auth and firestore references
+            // Initializing the auth service and storing the reference in the constant auth.
+            const auth = firebase.auth();
+            const db = firebase.firestore();
+      
+            // Version 5 of firebase, updating the settings
+            // Updating the system to know that we are using timestamps
+            db.settings({ timestampsInSnapshots: true });
+          </script>
+          <script src="scripts/index.js"></script>
+          <script src="scripts/auth.js"></script>
+          <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"
+          ></script>
+          <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"
+          ></script>
+          <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"
+          ></script>
+
     </div>
-    
-    <!-- Footer with information such as about us -->
-    <div class="footbar">
-        <footer>
-            <p>
-                <a href="#">Contact Us</a> | 
-                <a href="#">About Us</a> |
-                <a href="#">Account</a> |
-                <a href="#">Support</a>
-            </p>
-        </footer>
-    </div>
-
-    <!-- Loading the Firebase Authentication -->
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <!-- Core functionality -->
-    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
-    <!-- Authentication -->
-        <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-auth.js"></script>
-    <!-- Firestore -->
-        <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
-    <!-- Script to get popup table up and closed -->
-    
-    <script>
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        var firebaseConfig = {
-            apiKey: "AIzaSyC5aag88-iEClwLUrIxy5NlJE_RYgR3U74",
-            authDomain: "tech-daddy-sample.firebaseapp.com",
-            databaseURL: "https://tech-daddy-sample.firebaseio.com",
-            projectId: "tech-daddy-sample",
-            storageBucket: "tech-daddy-sample.appspot.com",
-            // messagingSenderId: "987204536377",
-            appId: "1:987204536377:web:5841d6f043c2e72994a5e8"
-        };
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-
-        // Make auth and firestore references
-        // Initializing the auth service and storing the reference in the constant auth.
-        const auth = firebase.auth();
-        const db = firebase.firestore();
-
-        // Version 5 of firebase, updating the settings
-        // Updating the system to know that we are using timestamps
-        db.settings({ timestampsInSnapshots: true});
-    </script>
-    <script src="scripts/index.js"></script>
-    <script src="scripts/auth.js"></script>
-</body>
+  </body>
 </html>

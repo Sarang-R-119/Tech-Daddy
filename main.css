@@ -1,4 +1,4 @@
-@import url(href=(https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap));
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 /* Font for entire page */
 * {
   font-size: 16px;
@@ -6,21 +6,8 @@
   box-sizing: border-box;
 }
 
-/* Remove margin and padding for body */
-body {
-  margin: 0%;
-  padding: 0%;
-}
-
-/* Header css */
-.top-bar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: #ed6d1e;
-}
 /* Header menu icon */
-.top-bar .menu button {
+.top-bar.menu button {
   background-image: url(./assets/images/menu.png);
   background-size: cover;
   background-color: #ed6d1e;
@@ -32,70 +19,63 @@ body {
 }
 
 /* Header logo image and caption  */
-.top-bar .logo {
+.top-bar.logo {
   text-align: center;
-  width: 100rem;
+  width: 100%;
 }
 
 /* Header logo image */
-.top-bar .logo img {
+.top-bar.logo img {
   padding-top: 1rem;
   width: 150px;
   cursor: pointer;
 }
 
 /* Header logo caption */
-.top-bar .logo h1 {
+.top-bar.logo h1 {
   font-size: 30px;
+  margin-top: 10px;
+  text-align: center;
 }
 
 /* Header sign in button */
-.top-bar .buttons button {
+.top-bar.buttons button {
   background-color: grey;
   border: 1px solid black;
   border-radius: 5px;
   text-align: center;
   text-decoration: none;
-  margin: 10px 20px 10px 10px;
+  margin: 10px 20px;
   padding-top: 10px;
   padding-bottom: 10px;
-  width: 5rem;
 }
 
 /* Body content */
 .content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   text-align: center;
-  align-items: center;
 }
 
 .content .menu {
   display: none;
-  width: 100%;
-  height: 72vh;
   background-color: #ed6d1e;
 }
 
 .content .menu ul {
   list-style-type: none;
-  text-align: center;
-  padding-left: 0%;
-  margin-left: 0%;
+  height: 75vh;
+  padding: 0%;
 }
 
 .content .menu li {
-  font-size: 80px;
+  font-size: 70px;
 }
 
 /* First content: box with button to find device */
 .content .content1 {
   display: block;
   margin-top: 30px;
-  padding: 1rem;
-  width: 80%;
-  max-width: 80%;
+  padding-top: 30px;
+  padding-bottom: 30px;
   background-color: #800000;
   border: 1px solid black;
   border-radius: 10px;
@@ -119,9 +99,9 @@ body {
 .content .content2 {
   display: block;
   margin-top: 30px;
-  padding: 1rem;
-  width: 80%;
-  max-width: 80%;
+  margin-bottom: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   background-color: #800000;
   border: 1px solid black;
   border-radius: 10px;
@@ -147,55 +127,39 @@ body {
   max-width: 16.5%;
 }
 
-.footbar {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
 /* Footer styling */
-.footbar footer {
+.footbar {
   text-decoration: none;
   color: black;
   text-align: center;
-  background-color: #ed6d1e;
   padding: 1rem;
 }
 
-/* Footer text styling */
-.footbar footer p a {
-  text-decoration: none;
+.footbar a {
   color: black;
 }
 
 /* Form for login, initially display none when signin button not pressed */
-.content .form-popup {
+.content.form-popup {
   display: none;
   position: fixed;
   /* border: 3px solid black; */
   border-radius: 15px;
   z-index: 9;
-}
-
-/* Container for form */
-.content .form-container {
-  width: 1200px;
-  max-width: 1200px;
   padding: 25px 10px 25px 10px;
   height: 60vh;
   backdrop-filter: blur(10px);
-  border: 1px solid black;
 }
 
-.content .form-container h1 {
-  font-size: 30px;
+.content.form-popup h1 {
+  font-size: 40px;
   color: black;
   margin: 0%;
 }
 
 /* Style for text box for password and username */
-.content .form-container input[type="text"],
-.form-container input[type="password"] {
-  width: 50%;
+.content.form-popup input[type="email"],
+input[type="password"] {
   padding: 15px;
   margin: 5px 0 22px 0;
   border: none;
@@ -203,39 +167,32 @@ body {
 }
 
 /* Style for button to submit form */
-.content .form-container .button {
+.content.form-popup .button {
   background-color: #ed6d1e;
   color: black;
-  padding: 16px 20px;
+  padding: 16px 70px;
   border: none;
   cursor: pointer;
-  width: 20%;
   margin-bottom: 10px;
   opacity: 0.8;
 }
 
-.content .form-container .buttonGoogle {
+.content.form-popup .buttonGoogle {
   background-color: white;
   color: black;
   padding: 16px 10px;
   border: none;
   cursor: pointer;
-  width: 20%;
   margin-bottom: 10px;
   opacity: 0.8;
-  position: relative;
-  text-align: right;
 }
 
-.content .form-container .buttonFB {
+.content.form-popup .buttonFB {
   background-color: #3b5998;
   color: white;
   padding: 16px 10px;
   border: none;
   cursor: pointer;
-  width: 20%;
   margin-bottom: 10px;
   opacity: 0.8;
-  text-align: right;
-  position: relative;
-} ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+}

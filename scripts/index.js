@@ -24,6 +24,7 @@ var el = document.getElementById("menu-button");
             displayS = popupStyle.display;
             if (displayS == 'block') {document.getElementById("myForm").style.display = "none";}
             el.style.backgroundImage=(currState ? "url(./assets/images/back.png)":"url(./assets/images/menu.png)");
+            document.getElementById("body").style.backgroundColor=(currState ? "#ed6d1e":"white");
             document.getElementById("menu1").style.display=(currState ? "block":"none");
             document.getElementById("content1").style.display=(currState ? "none":"block");
             document.getElementById("content2").style.display=(currState ? "none":"block");
