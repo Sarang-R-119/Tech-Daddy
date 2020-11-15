@@ -63,6 +63,16 @@ h4 {
     width: 40% !important;
 }
 
+.card-brand {
+    position: absolute;
+    font-style: italic;
+    font-size: 15px;
+    color: #533601;
+    text-align: left;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
 .btn {
     background-color: #858585 !important;
     border: none !important;

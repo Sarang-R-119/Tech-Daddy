@@ -9,6 +9,7 @@ $(document).ready(function () {
 
 function addCard(brand, name, price, description, image, url, height) {
     $("#main-grid").append("<div class=\"col\"><div class=\"card\" style=\"width: 18rem; height: " + height + "px\">\n" +
+        "    <p class=\"card-brand\">" + brand.toUpperCase() + "</p>\n" +
         "  <img src=" + image + " class=\"card-img-top\" alt=\"\">\n" +
         "  <div class=\"card-body d-flex flex-column\">\n" +
         "    <h5 class=\"card-title\">" + name + "</h5>\n" +
