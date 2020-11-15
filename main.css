@@ -71,6 +71,10 @@ body {
   align-items: center;
 }
 
+.content .input {
+  padding-bottom: 20px;
+}
+
 .content .menu {
   display: none;
   width: 100%;
