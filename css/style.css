@@ -1,57 +1,80 @@
-::selection
-{
-	background: #149077;
-	color: #FFF;
+::selection {
+    background: #f5b399;
+    color: #FFF;
 }
 
-::-moz-selection
-{
-	background: #149077;
-	color: #FFF;
+::-moz-selection {
+    background: #f5b399;
+    color: #FFF;
 }
 
 body {
-	background: linear-gradient(90deg, rgb(201, 205, 225) 0%, rgb(228, 237, 255) 35%, rgb(232, 252, 255) 100%);
+    background-color: #262626 !important;
 }
 
-a
-{
-	color: #16A085;
-	text-decoration: none;
+a {
+    color: #858585;
+    text-decoration: none;
 }
 
-	a:hover
-	{
-		color: #444;
-	}
+a:hover {
+    color: #E66435;
+}
 
 h1 {
-	text-align: center;
+    text-align: center;
 }
 
 h4 {
-	text-align: center;
+    text-align: center;
 }
 
-.container {
-	text-align: center;
-}
-
-.row {
-	padding-bottom: 100px;
+.container-fluid {
+    text-align: center;
 }
 
 #canvas {
-	margin: 3%;
+    margin: 3%;
 }
 
-#product_out {
-	padding-top: 10%;
+h4 {
+    color: white;
+}
+
+#header-image {
+    height: auto;
+    width: 30%;
+}
+
+.col {
+    padding-right: 50px;
+    padding-top: 25px;
+}
+
+.card {
+    background-color: #ffffff !important;
+    border: 3px solid #AC7D6C !important;
+}
+
+.card-img-top {
+    padding-top: 5%;
+    margin: auto;
+    height: auto;
+    width: 40% !important;
+}
+
+.btn {
+    background-color: #858585 !important;
+    border: none !important;
+}
+
+.btn:hover {
+    background-color: #E66435 !important;
 }
 
 .center {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }

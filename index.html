@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>TechDaddy Scrape Demo</title>
+    <link rel="icon" type="image/png" href="images/techdaddy-simple.png">
     <meta name="description"
           content="A proof of concept that uses php to retrieve product information from 3rd party sites">
     <link rel="stylesheet" href="css/style.css">
@@ -14,23 +15,16 @@
 </head>
 <body>
 <div id="canvas">
-    <h1 class="center">TechDaddy Site Scraping Demo</h1>
-    <h4 class="center" style="padding-bottom: 5%">This demonstration pulls live data from Dell's product site</h4>
-    <div class="container">
-        <form>
-            <div class="col-sm form-group">
-                <label for="device_search">Dell Search</label>
-                <input class="form-control" id="device_search" style="width: 50%; margin: auto">
-            </div>
-            <button id="device_search_btn" type="button" class="btn btn-primary" onclick="getProductSearch()">Submit</button>
-        </form>
+    <img class="center" id="header-image" src="images/techdaddy-logo.png">
+    <h4 class="center" style="padding-bottom: 5%">a demonstration that pulls live product data from dell's site</h4>
+    <div class="container-fluid">
         <div id="product_out">
             <div class="spinner-border" role="status" id="spinner">
                 <span class="sr-only">Loading...</span>
             </div>
-            <h1 id="product_name"></h1>
-            <img id="product_image" src=""/>
-            <h3 id="product_price"></h3>
+            <div style="color: white; text-align: left" id="product-count"></div>
+        </div>
+        <div id="main-grid" class="row">
         </div>
     </div>
 </div>

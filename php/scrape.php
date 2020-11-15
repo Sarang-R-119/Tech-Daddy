@@ -3,16 +3,21 @@
  * Handles scrape requests
  * @author Alex Austin
  */
+
 include "phpmanager.php";
+require_once "clas.product.php";
 
-$val = $_POST['value'];
-$out = $dellScraper->scrape($val);
-$data = null;
+session_start();
 
-if (!isset($out)) {
-    $data = array("Product not found 404", "", "");
-} else {
-    $data = array($out->getName(), $out->getPrice(), $out->getProductMeta()->getImageAddress());
+$offset = intval($_POST['offset']);
+$length = intval($_POST['length']);
+
+$products = array_slice($_SESSION['products'], $offset, $length);
+$out = array();
+
+/** @var Product $product */
+foreach ($products as $product) {
+    array_push($out, $product->toArray());
 }
-echo json_encode($data);
+echo json_encode($out);
 ?>
