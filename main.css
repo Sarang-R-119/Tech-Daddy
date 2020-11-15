@@ -1,4 +1,4 @@
-@import url(href=(https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap);
+@import url(href=(https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap));
 /* Font for entire page */
 * {
   font-size: 16px;
@@ -145,7 +145,6 @@ body {
 .content .content2 img {
   width: 16.5%;
   max-width: 16.5%;
-  
 }
 
 .footbar {
@@ -239,4 +238,4 @@ body {
   opacity: 0.8;
   text-align: right;
   position: relative;
-};;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+} ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

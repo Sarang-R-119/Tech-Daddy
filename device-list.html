@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/images/td.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Devices List</title>
+    <link rel="icon" href="assets/images/td.png" />
     <link rel="stylesheet" href="main.css" />
-    <title>TechDaddy</title>
-</head>
-<body>
-    <!-- Basically header for site -->
+  </head>
+  <body>
     <div class="top-bar">
         <!-- Menu icon -->
         <div class="menu">
@@ -16,7 +15,7 @@
         </div>
         <!-- Tech Daddy Logo -->
         <div class="logo">
-            <a href=""><img src="assets/images/td.png" alt="logo""></li></a>
+            <a href="main.html"><img src="assets/images/td.png" alt="logo""></li></a>
             <h1>Your Personal Tech Consultant</h1>
         </div>
         <!-- Login button -->
@@ -26,7 +25,7 @@
         </div>
     </div>
 
-    <!-- The body content -->
+     <!-- The body content -->
     <div class="content" id="content">
         <!-- Menu when button clicked -->
         <div class="menu" id="menu1" >
@@ -55,26 +54,8 @@
               <button type="submit" class="buttonFB"><img src="assets/images/fb.png" alt="fb-logo" style="width: 15%;position: absolute; top: 20%; left: 5%;">  Sign In with Facebook</button>
             </form>
           </div>
-          <!-- 1st content with button to find device -->
-        <div class="content1" id="content1">
-            <div class="content-button">
-                <a href="device-list.html">Find Your Device</a>
-            </div>
-        </div>
-        <!-- 2nd content with list of popular devices -->
-        <div class="content2" id="content2">
-            <h2>Popular Devices</h2>
-            <div class="devices">
-                    <img src="assets/images/prev.png" alt="prev" style="height: 100px;transform: scale(0.7)">
-                    <img src="assets/images/dell.png" alt="dell">
-                    <img src="assets/images/mac.png" alt="mac">
-                    <img src="assets/images/samsung.png" alt="samsung">
-                    <img src="assets/images/surface.png" alt="">
-                    <img src="assets/images/next.png" alt="next" style="height: 100px;transform: scale(0.7)">
-            </div>
-        </div>
     </div>
-    
+
     <!-- Footer with information such as about us -->
     <div class="footbar">
         <footer>
@@ -95,8 +76,7 @@
         <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-auth.js"></script>
     <!-- Firestore -->
         <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
-    <!-- Script to get popup table up and closed -->
-    
+        
     <script>
         // Your web app's Firebase configuration
         // For Firebase JS SDK v7.20.0 and later, measurementId is optional
@@ -123,5 +103,5 @@
     </script>
     <script src="scripts/index.js"></script>
     <script src="scripts/auth.js"></script>
-</body>
+  </body>
 </html>
