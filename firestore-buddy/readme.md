@@ -2,6 +2,7 @@
 A tool that can upload scraped device info to cloud-firestore
 
 ## How to Use?
+- Modify `firebase-sdk.json` with actual config values
 - Run `main.py` to upload all scraped device info to cloud-firestore
 
 ## TODO:
