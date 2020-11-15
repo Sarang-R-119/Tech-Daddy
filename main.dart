@@ -1,24 +1,52 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(TechDaddy());
 
-class MyApp extends StatelessWidget {
+class TechDaddy extends StatelessWidget {
   final appTitle = 'Drawer Demo';
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: appTitle,
-      home: MyHomePage(title: appTitle, user: "user"),
+      home: HomePagePostLogin(title: appTitle, user: "user"),
     );
   }
 }
 
-class MyHomePage extends StatelessWidget {
+class HomePageBeforeLogin extends StatelessWidget {
   final String title;
   final String user;
 
-  MyHomePage({Key key, this.title, this.user}) : super(key: key);
+  HomePageBeforeLogin({Key key, this.title, this.user}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+          backgroundColor: Color(0xff821c34),
+          title: Row(
+            children: <Widget>[
+              Image.asset(
+                'assets/logo.png',
+                height: 55,
+                width: 55,
+              ),
+              Spacer(flex: 2),
+              RaisedButton(child: Text('Login / Sign up'), color: Color(0xffd0532b), onPressed: () {},)
+            ],
+            mainAxisAlignment: MainAxisAlignment.start,
+          )),
+      backgroundColor: Color(0xfff6dad1),
+    );
+  }
+}
+
+class HomePagePostLogin extends StatelessWidget {
+  final String title;
+  final String user;
+
+  HomePagePostLogin({Key key, this.title, this.user}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
