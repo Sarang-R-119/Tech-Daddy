@@ -4,7 +4,16 @@ Updates local div elements
 @author Alex Austin
  */
 $(document).ready(function () {
-    loadProductData(0, 500);
+    db.collection('devices').get().then((snapshot) => {
+        // If you want to do anything with firestore-data, do it inside this block
+        // Otherwise, you won't have access to the data. Beince loading is asynchonous
+        result = []
+        snapshot.docs.forEach(doc => {
+            result.push(doc.data())
+        });
+        loadProductData(0, 500, result);
+    });
+
 });
 
 function addCard(brand, name, price, description, image, url, height) {
@@ -21,35 +30,24 @@ function addCard(brand, name, price, description, image, url, height) {
         "</div>");
 }
 
-function loadProductData(offset, length) {
-    $.ajax({
-        type: "post",
-        url: "php/scrape.php",
-        data: {
-            offset: offset,
-            length: length
-        },
-        dataType: "json",
-        success: function (result) {
-            $("#spinner").hide();
-            $("#product-count").text(result.length + " Results");
-            let i;
-            let height = 400;
-            for (i = 0; i < result.length; i++) {
-                let product;
+function loadProductData(offset, length, result) {
+    $("#spinner").hide();
+    $("#product-count").text(result.length + " Results");
+    let i;
+    let height = 400;
+    for (i = offset; i + 5 < result.length && i + 5 < length; i++) {
+        let product;
 
-                if (i % 5 === 0) {
-                    let j;
-                    for (j = i; j < i + 5; j++) {
-                        product = result[j];
-                        height = Math.max(height, product["description"].length * 2.2);
-                    }
-                }
-
-                product = result[i];
-                addCard(product["brand"], product["name"], product["price"], product["description"], product["meta"]["image_address"], product["meta"]["address"], height);
+        if (i % 5 === 0) {
+            let j;
+            for (j = i; j < i + 5; j++) {
+                product = result[j];
+                height = Math.max(height, product["description"].length * 2.2);
             }
         }
-    });
+
+        product = result[i];
+        addCard(product["brand"], product["name"], product["price"], product["description"], product["meta"]["image_address"], product["meta"]["address"], height);
+    }
 }
 
