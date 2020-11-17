@@ -6,11 +6,19 @@
 require_once "scraper/dell/clas.dellscraper.php";
 require_once "utils/util.jproductserializer.php";
 
-class ProductManager {
+class ProductManager
+{
     public static $products = array();
     private static $dellScraper;
 
-    public static function run()
+    public function addProducts(...$products)
+    {
+        foreach ($products as $product) {
+            array_push(self::$products, $product);
+        }
+    }
+
+    public function run()
     {
         self::$dellScraper = new DellScraper();
         self::$products = self::$dellScraper->buildProfiles();

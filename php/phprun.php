@@ -5,15 +5,18 @@
  */
 include "phpmanager.php";
 
+ini_set('memory_limit', '128M');
+set_time_limit(60 * 35); //2 minute time limit
+
 session_start();
-set_time_limit(60 * 2); //2 minute time limit
+
+$_SESSION["product_manager"] = new ProductManager();
 
 if(isset(ProductManager::$products) && count(ProductManager::$products) > 0) {
     echo "Product Size: " . count(ProductManager::$products);
     return;
 }
 
-ProductManager::run();
-$_SESSION['products'] = ProductManager::$products;
+$_SESSION["product_manager"]->run();
 echo "Product Size: " . count(ProductManager::$products);
 ?>

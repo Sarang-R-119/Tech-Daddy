@@ -38,7 +38,7 @@ function loadProductData(offset, length) {
             for (i = 0; i < result.length; i++) {
                 let product;
 
-                if (i % 5 === 0) {
+                if (i % 6 === 0) {
                     let j;
                     for (j = i; j < i + 5; j++) {
                         product = result[j];

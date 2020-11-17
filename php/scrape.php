@@ -12,11 +12,13 @@ session_start();
 $offset = intval($_POST['offset']);
 $length = intval($_POST['length']);
 
-$products = array_slice($_SESSION['products'], $offset, $length);
+/** @var ProductManager $productManager */
+$productManager = $_SESSION['product_manager'];
+$product_array = array_slice($productManager::$products, $offset, $length);
 $out = array();
 
 /** @var Product $product */
-foreach ($products as $product) {
+foreach ($product_array as $product) {
     array_push($out, $product->toArray());
 }
 echo json_encode($out);

@@ -2,7 +2,7 @@
 
 include __DIR__ . "/../../scraper/clas.pageprofile.php";
 include "pages/clas.tabularpage.php";
-include "pages/clas.showcasepage.php";
+include "pages/showcase/clas.showcasepage.php";
 require_once __DIR__ . "/../../scraper/inter.pagemanager.php";
 
 class DellPageManager implements PageManager
@@ -14,7 +14,8 @@ class DellPageManager implements PageManager
     {
         $this->PAGE_PROFILES = array();
         $tabular_profile = new PageProfile(new TabularPage(), new Identifier("div", "id", "ps-wrapper"));
-        array_push($this->PAGE_PROFILES, $tabular_profile);
+        $showcase_profile = new PageProfile(new ShowcasePage(), new Identifier("section", "id", "merchandizing-section"));
+        array_push($this->PAGE_PROFILES, $tabular_profile, $showcase_profile);
     }
 
     /**

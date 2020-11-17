@@ -12,13 +12,14 @@
 //include("../../utils/util.curl.php");
 
 include __DIR__ . "/../../clas.product.php";
-include __DIR__ . "/../../utils/util.curl.php";
 include __DIR__ . "/../inter.pagemanager.php";
 include "clas.dellpagemanager.php";
+require_once __DIR__ . "/../../utils/util.curl.php";
+require_once __DIR__ . "/../../phpmanager.php";
 
 class DellScraper
 {
-    private static $root = 'https://www.dell.com';
+    public static $root = 'https://www.dell.com';
     private static $address = 'https://www.dell.com/en-us/member/shop?~ck=mn';
     /* @var DOMDocument $document */
     private $document;
@@ -31,13 +32,12 @@ class DellScraper
         $this->pageManager = new DellPageManager();
     }
 
-    /**
-     * @return Product[]
-     */
     public function buildProfiles()
     {
+        session_start();
+        /** @var ProductManager $productManager */
+        $productManager = $_SESSION["product_manager"];
         $pages = self::getProductPages();
-        $products = array();
         foreach ($pages as $page) {
             $doc = Curl::loadDocument($page);
             $p_s = $this->pageManager->getPage($doc);
@@ -46,11 +46,11 @@ class DellScraper
             }
             $result = $p_s->scrape($doc, $page);
             foreach ($result as $product) {
-                if (isset($product))
-                    array_push($products, $product);
+                if (isset($product)) {
+                    $productManager->addProducts($product);
+                }
             }
         }
-        return $products;
     }
 
     /**

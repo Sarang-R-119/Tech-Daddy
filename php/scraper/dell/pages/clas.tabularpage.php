@@ -2,7 +2,6 @@
 
 require_once __DIR__ . "/../../../scraper/inter.pagemanager.php";
 require_once __DIR__ . "/../../../utils/util.curl.php";
-require_once __DIR__ . "/../../../clas.brand.php";
 require_once __DIR__ . "/../../../clas.product.php";
 require_once __DIR__ . "/../../../clas.brand.php";
 
