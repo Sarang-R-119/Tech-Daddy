@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- Demo created by Alex Austin -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TechDaddy Scrape Demo</title>
+    <link rel="icon" type="image/png" href="images/techdaddy-simple.png">
+    <meta name="description"
+        content="A proof of concept that uses php to retrieve product information from 3rd party sites">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="js/jquery.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
+</head>
+
+<body>
+    <div id="canvas">
+        <img class="center" id="header-image" src="images/techdaddy-logo.png">
+        <h4 class="center" style="padding-bottom: 5%">a demonstration that pulls live product data from dell's site</h4>
+        <div class="container-fluid">
+            <div id="product_out">
+                <div class="spinner-border" role="status" id="spinner">
+                    <span class="sr-only">Loading...</span>
+                </div>
+                <div style="color: white; text-align: left" id="product-count"></div>
+            </div>
+            <div id="main-grid" class="row">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "",
+            authDomain: "",
+            databaseURL: "",
+            projectId: "",
+            storageBucket: "",
+            messagingSenderId: "",
+            appId: ""
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        const db = firebase.firestore();
+        db.settings({ timestampsInSnapshots: true });
+    </script>
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
