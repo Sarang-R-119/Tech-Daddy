@@ -78,8 +78,7 @@
 .content .content1 {
   display: block;
   margin-top: 30px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px;
   background-color: #800000;
   border: 1px solid black;
   border-radius: 10px;
@@ -97,6 +96,41 @@
   padding-top: 5vh;
   padding-bottom: 5vh;
   font-size: 30px;
+}
+
+.content .content1 .content-question h1 {
+  text-align: center;
+  text-decoration: none;
+  background-color: #f2cec1;
+  border: 1px solid black;
+  border-radius: 10px;
+  color: black;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.content .content1 input {
+  text-align: center;
+  text-decoration: none;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 25px;
+  color: black;
+  padding: 10px;
+  font-size: 30px;
+  outline: none;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  max-width: 500px;
+}
+
+.content .content1 input:hover {
+  background-color: #f2cec1;
+  filter: saturate(5);
 }
 
 /* Second content: box with list of popular devices */
@@ -147,11 +181,10 @@
 .content.form-popup {
   display: none;
   position: fixed;
-  /* border: 3px solid black; */
   border-radius: 15px;
   z-index: 9;
   padding: 25px 10px 25px 10px;
-  height: 60vh;
+  height: 100vh;
   backdrop-filter: blur(10px);
 }
 
