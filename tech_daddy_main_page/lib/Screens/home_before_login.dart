@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'before_search.dart';
 import 'login_screen.dart';
 
 class HomePageBeforeLogin extends StatelessWidget {
@@ -11,6 +12,14 @@ class HomePageBeforeLogin extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: Container(
+          child: RaisedButton(
+        child: Text('Search'),
+        onPressed: () {
+          Navigator.push(context,
+              new MaterialPageRoute(builder: (context) => SearchPage()));
+        },
+      )),
       appBar: AppBar(
           backgroundColor: Color(0xff821c34),
           title: Row(
