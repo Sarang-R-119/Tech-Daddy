@@ -10,32 +10,37 @@
   </head>
   <body class="d-flex flex-column min-vh-100">
     <div id="body">
-        <div class="container-fluid p-0">
-            <div
-              class="row justify-content-between"
-              style="background-color: #ed6d1e"
-            >
-              <div class="col">
-                <div class="top-bar menu">
-                  <button id="menu-button" class="btn btn-sucess float-left"></button>
-                </div>
-              </div>
-              <div class="col">
-                <div class="top-bar logo">
-                  <a href="main.html"><img src="assets/images/td.png" alt="logo""></a>
-                  <h1>Your Personal Tech Consultant</h1>
-                </div>
-              </div>
-              <div class="col">
-                <div class="top-bar buttons">
-                  <!-- Script at bottom of html -->
-                  <button onclick="openForm()" class="btn btn-sucess float-right">
-                    Log In
-                  </button>
-                </div>
-              </div>
+      <div class="container-fluid P-0">
+        <div
+          class="row justify-content-between"
+          style="background-color: #ed6d1e"
+        >
+          <div class="col-md-4">
+            <div class="top-bar menu">
+              <button
+                id="menu-button"
+                class="btn btn-sucess float-left"
+              ></button>
             </div>
           </div>
+          <div class="col-md-4">
+            <div class="top-bar logo">
+              <a href="main.html"
+                ><img src="assets/images/td.png" alt="logo" class="img-fluid"
+              /></a>
+              <h1>Your Personal Tech Consultant</h1>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="top-bar buttons">
+              <!-- Script at bottom of html -->
+              <button onclick="openForm()" class="btn btn-sucess float-right">
+                Log In
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
       
             <div class="container-fluid p-0">
               <div class="row justify-content-center no-gutters content"">
@@ -53,82 +58,80 @@
                 </div>
             </div>
       
-          <div class="container-fluid p-0">
+            <div class="container-fluid">
               <div class="row">
-                  <div class="col">
-                    <form
-                      action="/action_page.php"
-                      class="content form-popup"
-                      id="myForm"
-                      style="width: 100%"
-                    >
-                      <h1>Sign In</h1>
-                      <hr class="clearfix w-100 pb-3" />
-                      <div class="form-group row justify-content-center">
-                        <div class="col-6">
-                          <input
-                            type="email"
-                            class="form-control"
-                            placeholder="Enter Email"
-                            name="email"
-                            required
+                <div class="col">
+                  <form
+                    action="/action_page.php"
+                    class="content form-popup"
+                    id="myForm"
+                  >
+                    <h1>Sign In</h1>
+                    <!-- <hr class="clearfix w-100 pb-3" /> -->
+                    <div class="form-group row justify-content-center">
+                      <div class="col-6">
+                        <input
+                          type="email"
+                          class="form-control"
+                          placeholder="Enter Email"
+                          name="email"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="form-group row justify-content-center">
+                      <div class="col-6">
+                        <input
+                          type="password"
+                          class="form-control"
+                          placeholder="Enter Password"
+                          name="psw"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <!-- <hr class="clearfix w-100 pb-3" /> -->
+                    <div class="row">
+                      <div class="col-md-3 offset-md-2">
+                        <button type="submit" class="button">Sign Up</button>
+                      </div>
+                      <div class="col-md-2">
+                        <button type="submit" class="button">Login</button>
+                      </div>
+                      <div class="col-md-3">
+                        <button type="submit" class="button" onclick="closeForm()">
+                          Close</button
+                        ><br />
+                      </div>
+                    </div>
+                    <div class="row justify-content-center">
+                      <div class="col-2">
+                        <button type="submit" class="buttonGoogle">
+                          <img
+                            src="assets/images/google.png"
+                            alt="google-logo"
+                            style="width: 10%"
                           />
-                        </div>
+                          Sign In with Google</button
+                        ><br />
                       </div>
-                      <div class="form-group row justify-content-center">
-                        <div class="col-6">
-                          <input
-                            type="password"
-                            class="form-control"
-                            placeholder="Enter Password"
-                            name="psw"
-                            required
+                    </div>
+                    <div class="row justify-content-center">
+                      <div class="col-2">
+                        <button type="submit" class="buttonFB">
+                          <img
+                            src="assets/images/fb.png"
+                            alt="fb-logo"
+                            style="width: 10%"
                           />
-                        </div>
+                          Sign In with Facebook
+                        </button>
                       </div>
-                      <hr class="clearfix w-100 pb-3" />
-                      <div class="row">
-                        <div class="col-md-3 offset-md-2">
-                          <button type="submit" class="button">Sign Up</button>
-                        </div>
-                        <div class="col-md-2">
-                          <button type="submit" class="button">Login</button>
-                        </div>
-                        <div class="col-md-3">
-                          <button type="submit" class="button" onclick="closeForm()">
-                            Close</button
-                          ><br />
-                        </div>
-                      </div>
-                      <div class="row justify-content-center">
-                        <div class="col-2">
-                          <button type="submit" class="buttonGoogle">
-                            <img
-                              src="assets/images/google.png"
-                              alt="google-logo"
-                              style="width: 10%"
-                            />
-                            Sign In with Google</button
-                          ><br />
-                        </div>
-                      </div>
-                      <div class="row justify-content-center">
-                        <div class="col-2">
-                          <button type="submit" class="buttonFB">
-                            <img
-                              src="assets/images/fb.png"
-                              alt="fb-logo"
-                              style="width: 10%"
-                            />
-                            Sign In with Facebook
-                          </button>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
+                    </div>
+                  </form>
                 </div>
-            
-          </div>
+              </div>
+            </div>
       
          <div class="container-fluid">
             <div class="row justify-content-center">
@@ -229,18 +232,18 @@
           <div class="container-fluid p-0">
             <footer class="page-footer footbar" style="background-color: #ed6d1e">
               <div class="row mt-auto no-gutters">
-                  <div class="col-md-2 offset-md-2">
-                      <a href="#">Contact Us</a>
-                  </div>
-                  <div class="col">
-                      <a href="#">About Us</a>
-                  </div>
-                  <div class="col">
-                      <a href="#">Account</a>
-                  </div>
-                  <div class="col">
-                      <a href="#">Support</a>
-                  </div>
+                <div class="col-md-2 offset-md-1">
+                  <a href="#">Contact Us</a>
+                </div>
+                <div class="col-md-3">
+                  <a href="#">About Us</a>
+                </div>
+                <div class="col-md-3">
+                  <a href="#">Account</a>
+                </div>
+                <div class="col-md-2">
+                  <a href="#">Support</a>
+                </div>
               </div>
             </footer>
           </div>

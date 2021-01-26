@@ -24,7 +24,7 @@ var el = document.getElementById("menu-button");
             displayS = popupStyle.display;
             if (displayS == 'block') {document.getElementById("myForm").style.display = "none";}
             el.style.backgroundImage=(currState ? "url(./assets/images/back.png)":"url(./assets/images/menu.png)");
-            document.getElementById("body").style.backgroundColor=(currState ? "#ed6d1e":"white");
+            // document.getElementById("body").style.backgroundColor=(currState ? "#ed6d1e":"white");
             var temp1 = document.getElementsByClassName("content1");
             for ( i = 0; i < temp1.length; i++ ) {
                 temp1[i].style.display=(currState ? "none":"block");
@@ -39,10 +39,8 @@ function changeColor(value) {
     var tempEl2 = document.getElementsByClassName("w-100 answer");
     console.log(tempEl2.length+"\n");
     for ( i = 0; i < tempEl2.length; i++ ) {
-        tempEl2[i].style.backgroundColor = "white";
         console.log(tempEl2[i].style.backgroundColor + "\n");
     }
-    value.style.backgroundColor="#ed6d1e";
 }
 
 //var currStateOnlyOne = false;

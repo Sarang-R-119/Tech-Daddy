@@ -2,7 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="HandheldFriendly" content="true" />
     <link rel="icon" href="assets/images/td.png" />
     <link
       rel="stylesheet"
@@ -15,12 +20,9 @@
   </head>
   <body class="d-flex flex-column min-vh-100">
     <div id="body">
-      <div class="container-fluid P-0">
-        <div
-          class="row justify-content-between"
-          style="background-color: #ed6d1e"
-        >
-          <div class="col-md-4">
+      <div class="container-fluid p-0">
+        <div class="row justify-content-between">
+          <div class="col-3">
             <div class="top-bar menu">
               <button
                 id="menu-button"
@@ -28,19 +30,19 @@
               ></button>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-6">
             <div class="top-bar logo">
               <a href="main.html"
-                ><img src="assets/images/td.png" alt="logo""></a
-              >
+                ><img src="assets/images/td.png" alt="logo" class="img-fluid"
+              /></a>
               <h1>Your Personal Tech Consultant</h1>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-3">
             <div class="top-bar buttons">
               <!-- Script at bottom of html -->
               <button onclick="openForm()" class="btn btn-sucess float-right">
-                Log In
+                Login
               </button>
             </div>
           </div>
@@ -63,17 +65,16 @@
       </div>
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid p-0">
       <div class="row">
         <div class="col">
           <form
             action="/action_page.php"
             class="content form-popup"
             id="myForm"
-            style="width: 100%"
           >
             <h1>Sign In</h1>
-            <hr class="clearfix w-100 pb-3" />
+            <!-- <hr class="clearfix w-100 pb-3" /> -->
             <div class="form-group row justify-content-center">
               <div class="col-6">
                 <input
@@ -96,15 +97,15 @@
                 />
               </div>
             </div>
-            <hr class="clearfix w-100 pb-3" />
+            <!-- <hr class="clearfix w-100 pb-3" /> -->
             <div class="row">
-              <div class="col-md-3 offset-md-2">
+              <div class="col-3 offset-2">
                 <button type="submit" class="button">Sign Up</button>
               </div>
-              <div class="col-md-2">
+              <div class="col-2">
                 <button type="submit" class="button">Login</button>
               </div>
-              <div class="col-md-3">
+              <div class="col-3">
                 <button type="submit" class="button" onclick="closeForm()">
                   Close</button
                 ><br />
@@ -163,22 +164,15 @@
         <!-- 1st content with button to find device -->
         <div class="col-10">
           <div class="content2" id="content2">
-            <h2>Popular Devices</h2>
+            <h1>Popular Devices</h1>
             <div class="devices">
               <img
-                src="assets/images/prev.png"
-                alt="prev"
-                style="height: 100px; transform: scale(0.7)"
+                src="assets/images/dell.png"
+                alt="dell"
+                style="margin-left: 60px"
               />
-              <img src="assets/images/dell.png" alt="dell" />
               <img src="assets/images/mac.png" alt="mac" />
               <img src="assets/images/samsung.png" alt="samsung" />
-              <img src="assets/images/surface.png" alt="" />
-              <img
-                src="assets/images/next.png"
-                alt="next"
-                style="height: 100px; transform: scale(0.7)"
-              />
             </div>
           </div>
         </div>
@@ -189,18 +183,18 @@
 
     <!-- Footer with information such as about us -->
     <div class="container-fluid p-0">
-      <footer class="page-footer footbar" style="background-color: #ed6d1e">
+      <footer class="page-footer footbar">
         <div class="row mt-auto no-gutters">
-          <div class="col-md-2 offset-md-1">
+          <div class="col-3">
             <a href="#">Contact Us</a>
           </div>
-          <div class="col-md-3">
+          <div class="col-3">
             <a href="#">About Us</a>
           </div>
-          <div class="col-md-3">
+          <div class="col-3">
             <a href="#">Account</a>
           </div>
-          <div class="col-md-2">
+          <div class="col-3">
             <a href="#">Support</a>
           </div>
         </div>

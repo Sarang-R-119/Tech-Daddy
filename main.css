@@ -1,21 +1,47 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 /* Font for entire page */
+body {
+  background: rgb(237, 109, 16);
+  background: radial-gradient(
+    circle,
+    rgba(237, 109, 16, 1) 0%,
+    rgba(237, 109, 16, 1) 30%,
+    rgba(128, 0, 0, 1) 100%
+  );
+}
+
 * {
-  font-size: 16px;
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
+}
+
+@media (min-width: 640px) {
+  body {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 960px) {
+  body {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1100px) {
+  body {
+    font-size: 1.5rem;
+  }
 }
 
 /* Header menu icon */
 .top-bar.menu button {
   background-image: url(./assets/images/menu.png);
   background-size: cover;
-  background-color: #ed6d1e;
+  /* background-color: #ed6d1e; */
   border: none;
   margin: 10px 20px;
-  width: 50px;
-  height: 50px;
+  width: 5vh;
+  height: 5vh;
   cursor: pointer;
+  outline: none;
 }
 
 /* Header logo image and caption  */
@@ -27,13 +53,13 @@
 /* Header logo image */
 .top-bar.logo img {
   padding-top: 1rem;
-  width: 150px;
+  width: 10vh;
   cursor: pointer;
 }
 
 /* Header logo caption */
 .top-bar.logo h1 {
-  font-size: 30px;
+  font-size: 2vh;
   margin-top: 10px;
   text-align: center;
 }
@@ -61,25 +87,25 @@
 
 .content .menu {
   display: none;
-  background-color: #ed6d1e;
+  /* background-color: #ed6d1e; */
 }
 
 .content .menu ul {
   list-style-type: none;
-  height: 75vh;
+  height: 100%;
   padding: 0%;
 }
 
 .content .menu li {
-  font-size: 70px;
+  font-size: 8vh;
 }
 
 /* First content: box with button to find device */
 .content .content1 {
   display: block;
   margin-top: 30px;
-  padding: 30px;
-  background-color: #800000;
+  padding: 3%;
+  /* background-color: #800000; */
   border: 1px solid black;
   border-radius: 10px;
 }
@@ -92,10 +118,10 @@
   background-color: gray;
   border: 1px solid black;
   color: black;
-  width: 50%;
-  padding-top: 5vh;
-  padding-bottom: 5vh;
-  font-size: 30px;
+  width: 75%;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  /* font-size: 1.2rem; */
 }
 
 .content .content1 .content-question h1 {
@@ -107,7 +133,7 @@
   color: black;
   padding-top: 5vh;
   padding-bottom: 5vh;
-  font-size: 30px;
+  /* font-size: 1.2rem; */
   font-weight: bold;
 }
 
@@ -119,7 +145,7 @@
   border-radius: 25px;
   color: black;
   padding: 10px;
-  font-size: 30px;
+  font-size: 1rem;
   outline: none;
   padding-left: 30px;
   padding-right: 30px;
@@ -140,14 +166,14 @@
   margin-bottom: 50px;
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: #800000;
+  /* s */
   border: 1px solid black;
   border-radius: 10px;
 }
 
 /* Heading for second content */
-.content .content2 h2 {
-  font-size: 30px;
+.content .content2 h1 {
+  font-size: 5vh;
   font-weight: normal;
 }
 
@@ -161,13 +187,14 @@
 
 /* Style for devices images*/
 .content .content2 img {
-  width: 16.5%;
-  max-width: 16.5%;
+  width: 100vh;
+  max-width: 30%;
 }
 
 /* Footer styling */
 .footbar {
   text-decoration: none;
+  font-size: 1rem;
   color: black;
   text-align: center;
   padding: 1rem;
@@ -189,7 +216,7 @@
 }
 
 .content.form-popup h1 {
-  font-size: 40px;
+  /* font-size: 1.3rem; */
   color: black;
   margin: 0%;
 }
@@ -197,7 +224,8 @@
 /* Style for text box for password and username */
 .content.form-popup input[type="email"],
 input[type="password"] {
-  padding: 15px;
+  padding: 1rem;
+  font-size: 1rem;
   margin: 5px 0 22px 0;
   border: none;
   background: white;
@@ -205,18 +233,21 @@ input[type="password"] {
 
 /* Style for button to submit form */
 .content.form-popup .button {
-  background-color: #ed6d1e;
+  /* background-color: #ed6d1e; */
+  font-size: 0.8rem;
   color: black;
-  padding: 16px 70px;
+  padding: 16px 40px;
   border: none;
   cursor: pointer;
   margin-bottom: 10px;
   opacity: 0.8;
+  /* max-width: 100px; */
 }
 
 .content.form-popup .buttonGoogle {
   background-color: white;
   color: black;
+  font-size: 0.8rem;
   padding: 16px 10px;
   border: none;
   cursor: pointer;
@@ -227,9 +258,26 @@ input[type="password"] {
 .content.form-popup .buttonFB {
   background-color: #3b5998;
   color: white;
+  font-size: 0.8rem;
   padding: 16px 10px;
   border: none;
   cursor: pointer;
   margin-bottom: 10px;
   opacity: 0.8;
+}
+
+@media (max-width: 500px) {
+  .content .content2 img[alt="dell"],
+  [alt="mac"] {
+    display: none;
+  }
+
+  .content .content2 img[alt="samsung"] {
+    width: 200%;
+    min-width: 100%;
+  }
+
+  .footbar a {
+    font-size: 1rem;
+  }
 }
