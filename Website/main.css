@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+/* Font for entire page */
+body {
+  /* filter: brightness(140%); */
+  height: 100vh;
+  width: 100%;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  /* filter: saturate(102%); */
+  /* overflow: auto; */
+}
+
+@media (min-width: 640px) {
+  body {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 960px) {
+  body {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1100px) {
+  body {
+    font-size: 1.5rem;
+  }
+}
+
+/* Header menu icon */
+.top-bar.menu button {
+  background-image: url(./assets/images/menu.png);
+  background-size: cover;
+  /* background-color: #ed6d1e; */
+  border: none;
+  margin: 30px 20px;
+  width: 5vh;
+  height: 5vh;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Header logo image and caption  */
+.top-bar.logo {
+  text-align: center;
+  width: 100%;
+}
+
+/* Header logo image */
+.top-bar.logo img {
+  padding-top: 1rem;
+  width: 10vh;
+  cursor: pointer;
+}
+
+/* Header logo caption */
+.top-bar.logo h1 {
+  font-size: 2vh;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Header sign in button */
+.top-bar.buttons button {
+  background-color: #ed6d1e;
+  /* border: 1px solid black; */
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  margin: 30px 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* Body content */
+.content {
+  text-align: center;
+}
+
+.content .input {
+  padding-bottom: 20px;
+}
+
+.content .menu {
+  display: none;
+  /* background-color: #ed6d1e; */
+}
+
+.content .menu ul {
+  list-style-type: none;
+  height: 100%;
+  padding: 0%;
+}
+
+.content .menu li {
+  font-size: 8vh;
+}
+
+/* First content: box with button to find device */
+.content .content1 {
+  display: block;
+  margin-top: 30px;
+  padding: 3%;
+  /* background-color: #800000; */
+  /* border: 1px solid black; */
+  border-radius: 25px;
+}
+
+/* Button in content1  */
+.content .content1 .content-button a {
+  text-align: center;
+  text-decoration: none;
+  appearance: button;
+  background-color: white;
+  /* filter: brightness(80%); */
+  /* background-image: url("assets/images/tech.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover; */
+  /* border: 1px solid black; */
+  color: black;
+  width: 75%;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  border-radius: 25px;
+  transition: all 0.4s ease-in-out;
+  /* font-size: 1.2rem; */
+}
+
+.content .content1 .content-button a:hover {
+  transform: scale(1.1);
+  background-color: rgba(128, 0, 0, 1);
+  filter: brightness(120%);
+  box-shadow: 20px 20px rgba(0, 0, 0, 0.3);
+}
+
+.content .content1 .content-question h1 {
+  text-align: center;
+  text-decoration: none;
+  background-color: #f2cec1;
+  border: 1px solid black;
+  border-radius: 10px;
+  color: black;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  /* font-size: 1.2rem; */
+  font-weight: bold;
+}
+
+.content .content1 input {
+  text-align: center;
+  text-decoration: none;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 25px;
+  color: black;
+  padding: 10px;
+  font-size: 1rem;
+  outline: none;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  max-width: 500px;
+}
+
+.content .content1 input:hover {
+  background-color: #f2cec1;
+  filter: saturate(5);
+}
+
+/* Second content: box with list of popular devices */
+.content .content2 {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  /* border: 1px solid black; */
+  border-radius: 10px;
+}
+
+/* Heading for second content */
+.content .content2 h1 {
+  font-size: 5vh;
+  font-weight: normal;
+}
+
+/* Horizontal list of devices */
+.content .content2 .devices {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+
+/* Style for devices images*/
+.content .content2 img {
+  width: 100vh;
+  max-width: 30%;
+}
+
+.content .content3 {
+  border-radius: 10%;
+}
+
+/* .content .content3 .card-group {
+  display: block;
+} */
+
+.content .content3 li {
+  font-size: 1rem;
+}
+
+.content .content3 img {
+  max-width: 25rem;
+}
+
+.content .content3 .card {
+  /* margin: 5px; */
+  border: none;
+  box-shadow: 20px 20px rgba(0, 0, 0, 0.3);
+  margin: 3%;
+  background: rgb(237, 109, 16);
+}
+
+.content .content3 .card img {
+  background: rgb(237, 109, 16);
+}
+
+.content .content3 .card:hover {
+  transform: scale(1.02);
+}
+
+/* Footer styling */
+.footbar {
+  text-decoration: none;
+  font-size: 1rem;
+  color: black;
+  text-align: center;
+  padding: 1rem;
+  background-color: inherit;
+}
+
+.footbar a {
+  color: black;
+}
+
+/* Form for login, initially display none when signin button not pressed */
+.content.form-popup {
+  display: none;
+  position: fixed;
+  border-radius: 15px;
+  z-index: 9;
+  padding: 25px 10px 25px 10px;
+  height: 100vh;
+  backdrop-filter: blur(10px);
+  filter: brightness(90%);
+}
+
+.content.form-popup h1 {
+  color: black;
+  margin: 0%;
+}
+
+/* Style for text box for password and username */
+.content.form-popup input[type="email"],
+input[type="password"] {
+  padding: 1.2rem;
+  font-size: 1rem;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: white;
+  border-radius: 5px;
+}
+
+/* Style for button to submit form */
+.content.form-popup .button {
+  /* background-color: #ed6d1e; */
+  font-size: 2vh;
+  color: black;
+  border-radius: 5px;
+  /* padding: 16px 40px; */
+  padding: 3vh 4vh;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+  opacity: 0.8;
+  /* max-width: 140px; */
+  /* height: 70px; */
+}
+
+.content.form-popup .buttonGoogle {
+  background-color: white;
+  border-radius: 5px;
+  color: black;
+  font-size: 2vh;
+  padding: 3vh 5px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.content.form-popup .buttonFB {
+  background-color: #3b5998;
+  color: white;
+  font-size: 2vh;
+  padding: 3vh 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+@media (max-width: 500px) {
+  .content .content2 img[alt="dell"],
+  [alt="mac"] {
+    display: none;
+  }
+
+  .content .content2 img[alt="samsung"] {
+    width: 200%;
+    min-width: 100%;
+  }
+
+  .footbar a {
+    font-size: 1rem;
+  }
+}
+
+/* .options {
+  width: 100%;
+  filter: saturate(0.2);
+}
+
+.option1 {
+  position: absolute;
+  display: block;
+  z-index: -1;
+  transform-origin: center center 0;
+  transform: translateZ(-1px) scale(2);
+} */
+
+/* .parallax-wrapper {
+  width: 100%;
+  height: 100vh;
+  transform-style: preserve-3d;
+}
+
+.parallax-wrapper::before {
+  content: "";
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  background-image: url("assets/images/tech.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: saturate(0.2);
+  position: absolute;
+  z-index: -1;
+  transform: translateZ(-1px) scale(2);
+} */
