@@ -20,7 +20,7 @@
   </head>
   <body class="d-flex flex-column min-vh-100">
     <div id="body">
-      <div class="container-fluid p-0">
+      <div class="container-fluid">
         <div class="row justify-content-between">
           <div class="col-3">
             <div class="top-bar menu">
@@ -49,137 +49,154 @@
         </div>
       </div>
 
+      <div
+        style="
+          background: rgb(237, 109, 16);
+          background: radial-gradient(
+            circle,
+            rgba(237, 109, 16, 1) 0%,
+            rgba(237, 109, 16, 1) 22%,
+            rgba(128, 0, 0, 1) 75%
+          );
+          filter: brightness(100%);
+        "
+      >
+        <div class="container-fluid p-0">
+          <div class="row justify-content-center no-gutters content"">
+          <div class="col-12" id="content">
+            <div class="menu" id="menu1">
+              <ul>
+                <li>Laptops</li>
+                <li>Smartphones</li>
+                <li>Desktops</li>
+                <li>Accesories</li>
+                <li>????</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="container-fluid p-0">
-        <div class="row justify-content-center no-gutters content"">
-        <div class="col-12" id="content">
-          <div class="menu" id="menu1">
-            <ul>
-              <li>Laptops</li>
-              <li>Smartphones</li>
-              <li>Desktops</li>
-              <li>Accesories</li>
-              <li>????</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid p-0">
-      <div class="row">
-        <div class="col">
-          <form
-            action="/action_page.php"
-            class="content form-popup"
-            id="myForm"
-          >
-            <h1>Sign In</h1>
-            <!-- <hr class="clearfix w-100 pb-3" /> -->
-            <div class="form-group row justify-content-center">
-              <div class="col-6">
-                <input
-                  type="email"
-                  class="form-control"
-                  placeholder="Enter Email"
-                  name="email"
-                  required
-                />
-              </div>
-            </div>
-            <div class="form-group row justify-content-center">
-              <div class="col-6">
-                <input
-                  type="password"
-                  class="form-control"
-                  placeholder="Enter Password"
-                  name="psw"
-                  required
-                />
-              </div>
-            </div>
-            <!-- <hr class="clearfix w-100 pb-3" /> -->
-            <div class="row">
-              <div class="col-3 offset-2">
-                <button type="submit" class="button">Sign Up</button>
-              </div>
-              <div class="col-2">
-                <button type="submit" class="button">Login</button>
-              </div>
-              <div class="col-3">
-                <button type="submit" class="button" onclick="closeForm()">
-                  Close</button
-                ><br />
-              </div>
-            </div>
-            <div class="row justify-content-center">
-              <div class="col-2">
-                <button type="submit" class="buttonGoogle">
-                  <img
-                    src="assets/images/google.png"
-                    alt="google-logo"
-                    style="width: 10%"
+        <div class="row">
+          <div class="col">
+            <form
+              action="/action_page.php"
+              class="content form-popup"
+              id="myForm"
+            >
+              <h1>Sign In</h1>
+              <!-- <hr class="clearfix w-100 pb-3" /> -->
+              <div class="form-group row justify-content-center">
+                <div class="col-6">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Enter Email"
+                    name="email"
+                    required
                   />
-                  Sign In with Google</button
-                ><br />
+                </div>
               </div>
-            </div>
-            <div class="row justify-content-center">
-              <div class="col-2">
-                <button type="submit" class="buttonFB">
-                  <img
-                    src="assets/images/fb.png"
-                    alt="fb-logo"
-                    style="width: 10%"
+              <div class="form-group row justify-content-center">
+                <div class="col-6">
+                  <input
+                    type="password"
+                    class="form-control"
+                    placeholder="Enter Password"
+                    name="psw"
+                    required
                   />
-                  Sign In with Facebook
-                </button>
+                </div>
+              </div>
+              <!-- <hr class="clearfix w-100 pb-3" /> -->
+              <div class="container-fluid">
+                <div class="row justify-content-center">
+                  <div class="col-sm-4">
+                    <button type="submit" class="button">Sign Up</button>
+                  </div>
+                  <div class="col-sm-2">
+                    <button type="submit" class="button">Login</button>
+                  </div>
+                  <div class="col-sm-4">
+                    <button type="submit" class="button" onclick="closeForm()">
+                      Close</button
+                    ><br />
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-2">
+                  <button type="submit" class="buttonGoogle">
+                    <img
+                      src="assets/images/google.png"
+                      alt="google-logo"
+                      style="width: 10%"
+                    />
+                    Sign In with Google</button
+                  ><br />
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-2">
+                  <button type="submit" class="buttonFB">
+                    <img
+                      src="assets/images/fb.png"
+                      alt="fb-logo"
+                      style="width: 10%"
+                    />
+                    Sign In with Facebook
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid p-0">
+        <div class="d-flex justify-content-center align-items-center content">
+          <div class="col-10">
+            <div class="content1">
+              <div class="content-button">
+                <a href="survey.html"
+                  >Not tech Savvy? Let us find your device!</a
+                >
               </div>
             </div>
-          </form>
+            <div class="content1">
+              <div class="content-button">
+                <a href="device-list.html"
+                  >Know what you want? Browse all devices now!</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="container-fluid p-0">
-      <div class="d-flex justify-content-center align-items-center content">
-        <div class="col-10">
-          <div class="content1">
-            <div class="content-button">
-              <a href="survey.html">Not tech Savvy? Let us find your device!</a>
-            </div>
-          </div>
-          <div class="content1">
-            <div class="content-button">
-              <a href="device-list.html"
-                >Know what you want? Browse all devices now!</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid p-0">
-      <div class="d-flex justify-content-center align-items-center content">
-        <!-- 1st content with button to find device -->
-        <div class="col-10">
-          <div class="content2" id="content2">
-            <h1>Popular Devices</h1>
-            <div class="devices">
-              <img
-                src="assets/images/dell.png"
-                alt="dell"
-                style="margin-left: 60px"
-              />
-              <img src="assets/images/mac.png" alt="mac" />
-              <img src="assets/images/samsung.png" alt="samsung" />
+      <div class="container-fluid p-0">
+        <div class="d-flex justify-content-center align-items-center content">
+          <!-- 1st content with button to find device -->
+          <div class="col-10">
+            <div class="content2" id="content2">
+              <h1>Popular Devices</h1>
+              <div class="devices">
+                <img
+                  src="assets/images/dell.png"
+                  alt="dell"
+                  style="margin-left: 60px"
+                />
+                <img src="assets/images/mac.png" alt="mac" />
+                <img src="assets/images/samsung.png" alt="samsung" />
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <!-- <div class="mt-xl-3"></div>
+            <div class="mt-xl-5"></div> -->
     </div>
-    <!-- <div class="mt-xl-3"></div>
-          <div class="mt-xl-5"></div> -->
 
     <!-- Footer with information such as about us -->
     <div class="container-fluid p-0">
