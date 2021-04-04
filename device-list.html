@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Devices List</title>
+    <link rel="icon" href="./assets/images/td.png" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <div id="body">
+      <div class="container-fluid">
+        <div class="row justify-content-between">
+          <div class="col-3">
+            <div class="top-bar menu">
+              <button
+                id="menu-button"
+                class="btn btn-sucess float-left"
+              ></button>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="top-bar logo">
+              <a href="main.html"
+                ><img src="assets/images/td.png" alt="logo" class="img-fluid"
+              /></a>
+              <h1>Your Personal Tech Consultant</h1>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="top-bar buttons">
+              <!-- Script at bottom of html -->
+              <button onclick="openForm()" class="btn btn-sucess float-right">
+                Login
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="container-fluid p-0"
+        style="
+          background: rgb(237, 109, 16);
+          background: radial-gradient(
+            circle,
+            rgba(237, 109, 16, 1) 0%,
+            rgba(237, 109, 16, 1) 22%,
+            rgba(128, 0, 0, 1) 75%
+          );
+          filter: brightness(100%);
+        "
+      >
+        <div class="row justify-content-center no-gutters content">
+          <div class="col-12" id="content">
+            <div class="menu" id="menu1">
+              <ul>
+                <li>Laptops</li>
+                <li>Smartphones</li>
+                <li>Desktops</li>
+                <li>Accesories</li>
+                <li>????</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid p-0">
+        <div class="row">
+          <div class="col">
+            <form
+              action="/action_page.php"
+              class="content form-popup"
+              id="myForm"
+            >
+              <h1>Sign In</h1>
+              <!-- <hr class="clearfix w-100 pb-3" /> -->
+              <div class="form-group row justify-content-center">
+                <div class="col-6">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Enter Email"
+                    name="email"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group row justify-content-center">
+                <div class="col-6">
+                  <input
+                    type="password"
+                    class="form-control"
+                    placeholder="Enter Password"
+                    name="psw"
+                    required
+                  />
+                </div>
+              </div>
+              <!-- <hr class="clearfix w-100 pb-3" /> -->
+              <div class="container-fluid">
+                <div class="row justify-content-center">
+                  <div class="col-sm-4">
+                    <button type="submit" class="button">Sign Up</button>
+                  </div>
+                  <div class="col-sm-2">
+                    <button type="submit" class="button">Login</button>
+                  </div>
+                  <div class="col-sm-4">
+                    <button type="submit" class="button" onclick="closeForm()">
+                      Close</button
+                    ><br />
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-2">
+                  <button type="submit" class="buttonGoogle">
+                    <img
+                      src="assets/images/google.png"
+                      alt="google-logo"
+                      style="width: 10%"
+                    />
+                    Sign In with Google</button
+                  ><br />
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-2">
+                  <button type="submit" class="buttonFB">
+                    <img
+                      src="assets/images/fb.png"
+                      alt="fb-logo"
+                      style="width: 10%"
+                    />
+                    Sign In with Facebook
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- style="
+          background: linear-gradient(
+            90deg,
+            rgba(237, 109, 16, 1) 0%,
+            rgba(237, 109, 16, 1) 22%,
+            rgba(128, 0, 0, 1) 75%
+          );
+        " -->
+      <div style="background: rgba(128, 0, 0, 1)">
+        <div
+          class="content contaner-fluid"
+          style="padding-top: 30px; margin-bottom: 20px; display: block"
+          id="searchbar"
+        >
+          <div class="row justify-content-center align-items-center content">
+            <div class="col-md-8">
+              <div class="input-group input-group-lg">
+                <div style="height: inherit">
+                  <button
+                    class="btn dropdown-toggle"
+                    type="button"
+                    data-toggle="dropdown"
+                    aria-expanded="false"
+                    style="
+                      box-shadow: 20px 20px rgba(0, 0, 0, 0.3);
+                      background: rgb(237, 109, 16);
+                      border-radius: 0%;
+                    "
+                  >
+                    Types
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Laptops</a></li>
+                    <li><a class="dropdown-item" href="#">Smartphones</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Accesories</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li><a class="dropdown-item" href="#">Something</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <button
+                    class="btn dropdown-toggle"
+                    type="button"
+                    data-toggle="dropdown"
+                    aria-expanded="false"
+                    style="
+                      box-shadow: 20px 20px rgba(0, 0, 0, 0.3);
+                      background: rgb(237, 109, 16);
+                      border-radius: 0%;
+                    "
+                  >
+                    Budget
+                  </button>
+                  <ul class="dropdown-menu" style="width: 30%">
+                    <li>
+                      <input
+                        type="text"
+                        id="slider1"
+                        class="form-control"
+                        placeholder="Minimum $"
+                        min="1"
+                        max="10000"
+                        style="border: none"
+                      />
+                    </li>
+                    <li>
+                      <input
+                        type="text"
+                        id="slider2"
+                        class="form-control"
+                        placeholder="Maximum $"
+                        min="1"
+                        max="10000"
+                        style="border: none"
+                      />
+                    </li>
+                  </ul>
+                </div>
+                <div class="input-group-prepend"></div>
+                <input
+                  type="text"
+                  class="form-control"
+                  aria-label="Large"
+                  aria-describedby="inputGroup-sizing-sm"
+                  style="box-shadow: 20px 20px rgba(0, 0, 0, 0.4)"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- The body content -->
+        <div
+          class="content container-fluid"
+          id="content3cards"
+          style="display: block; padding-bottom: 40px"
+        ></div>
+
+        <div
+          class="container"
+          id="numberList"
+          style="padding-bottom: 40px; display: block"
+        >
+          <nav
+            class="navbar navbar-expand-lg navbar-light bg-light"
+            style="box-shadow: 20px 20px rgba(0, 0, 0, 0.4)"
+          >
+            <a class="navbar-brand" href="#" style="margin: 10px">1</a>
+            <a class="navbar-brand" href="#" style="margin: 10px">2</a>
+            <a class="navbar-brand" href="#" style="margin: 10px">3</a>
+            <a class="navbar-brand" href="#" style="margin: 10px">4</a>
+            <a class="navbar-brand" href="#" style="margin: 10px">5</a>
+            <a class="navbar-brand" href="#" style="margin: 10px">6</a>
+            <a class="navbar-brand" href="#" style="margin: 10px">7</a>
+            <a class="navbar-brand" href="#" style="margin: 10px">8</a>
+            <a class="navbar-brand" href="#" style="margin: 10px">9</a>
+            <a class="navbar-brand" href="#" style="margin: 10px">10</a>
+            <a class="navbar-brand" href="#" style="margin: 10px">11</a>
+            <a class="navbar-brand" href="#" style="margin: 10px">12</a>
+            <a class="navbar-brand" href="#" style="margin: 10px">13</a>
+            <a class="navbar-brand" href="#" style="margin: 10px">14</a>
+            <a class="navbar-brand" href="#" style="margin: 10px">15</a>
+            <a class="navbar-brand" href="#" style="margin: 10px">16</a>
+            <a class="navbar-brand" href="#" style="margin: 10px">17</a>
+            <a class="navbar-brand" href="#" style="margin: 10px">18</a>
+            <a class="navbar-brand" href="#" style="margin: 10px">19</a>
+            <a class="navbar-brand" href="#" style="margin: 10px">20</a>
+            <a class="navbar-brand" href="#" style="margin: 10px">21</a>
+            <a class="navbar-brand" href="#" style="margin: 10px">22</a>
+            <a class="navbar-brand" href="#" style="margin: 10px">23</a>
+            <a class="navbar-brand" href="#" style="margin: 10px">24</a>
+            <a class="navbar-brand" href="#" style="margin: 10px">25</a>
+            <a
+              class="navbar-brand"
+              href="#"
+              style="margin: 10px; margin-left: 60px"
+              >>></a
+            >
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer with information such as about us -->
+    <div class="container-fluid p-0">
+      <footer class="page-footer footbar">
+        <div class="row mt-auto no-gutters">
+          <div class="col-3">
+            <a href="#">Contact Us</a>
+          </div>
+          <div class="col-3">
+            <a href="#">About Us</a>
+          </div>
+          <div class="col-3">
+            <a href="#">Account</a>
+          </div>
+          <div class="col-3">
+            <a href="#">Support</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Loading the Firebase Authentication -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <!-- Core functionality -->
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+    <!-- Authentication -->
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-auth.js"></script>
+    <!-- Firestore -->
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+    <!-- Script to get popup table up and closed -->
+
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyC5aag88-iEClwLUrIxy5NlJE_RYgR3U74",
+        authDomain: "tech-daddy-sample.firebaseapp.com",
+        databaseURL: "https://tech-daddy-sample.firebaseio.com",
+        projectId: "tech-daddy-sample",
+        storageBucket: "tech-daddy-sample.appspot.com",
+        // messagingSenderId: "987204536377",
+        appId: "1:987204536377:web:5841d6f043c2e72994a5e8",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+
+      // Make auth and firestore references
+      // Initializing the auth service and storing the reference in the constant auth.
+      const auth = firebase.auth();
+      const db = firebase.firestore();
+
+      // Version 5 of firebase, updating the settings
+      // Updating the system to know that we are using timestamps
+      db.settings({ timestampsInSnapshots: true });
+    </script>
+    <script type="module" src="./scripts/loadData.js"></script>
+    <script src="./scripts/index.js"></script>
+    <script src="./scripts/auth.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+  </body>
+</html>

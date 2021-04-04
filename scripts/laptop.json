@@ -1,0 +1,85 @@
+{
+    "laptop": [
+    {
+        "img" : "assets/images/dell.png",
+        "name": "Dell XPS 13",
+        "specs": "i5-10210U @ 4.2GHz | 256 GB SSD | 8 GB LPDDR3 @ 2133MHz",
+        "gpu": "Intel UHD Graphics",
+        "display": "13.3 in / 1920 x 1080",
+        "battery":"~19 hrs",
+        "weight":"2.56 lb",
+        "ports": "1x MicroSD, 1x USB-C 3.1, 1x headphone, 2x Thunderbolt 3"
+    },
+    {
+        "img" : "assets/images/mac.png",
+        "name": "Dell XPS 13",
+        "specs": "i5-10210U @ 4.2GHz | 256 GB SSD | 8 GB LPDDR3 @ 2133MHz",
+        "gpu": "Intel UHD Graphics",
+        "display": "13.3 in / 1920 x 1080",
+        "battery":"~19 hrs",
+        "weight":"2.56 lb",
+        "ports": "1x MicroSD, 1x USB-C 3.1, 1x headphone, 2x Thunderbolt 3"
+    },
+    {
+        "img" : "assets/images/samsung.png",
+        "name": "Dell XPS 13",
+        "specs": "i5-10210U @ 4.2GHz | 256 GB SSD | 8 GB LPDDR3 @ 2133MHz",
+        "gpu": "Intel UHD Graphics",
+        "display": "13.3 in / 1920 x 1080",
+        "battery":"~19 hrs",
+        "weight":"2.56 lb",
+        "ports": "1x MicroSD, 1x USB-C 3.1, 1x headphone, 2x Thunderbolt 3"
+    },
+    {
+        "img" : "assets/images/surface.png",
+        "name": "Dell XPS 13",
+        "specs": "i5-10210U @ 4.2GHz | 256 GB SSD | 8 GB LPDDR3 @ 2133MHz",
+        "gpu": "Intel UHD Graphics",
+        "display": "13.3 in / 1920 x 1080",
+        "battery":"~19 hrs",
+        "weight":"2.56 lb",
+        "ports": "1x MicroSD, 1x USB-C 3.1, 1x headphone, 2x Thunderbolt 3"
+    },
+    {
+        "img" : "assets/images/dell.png",
+        "name": "Dell XPS 13",
+        "specs": "i5-10210U @ 4.2GHz | 256 GB SSD | 8 GB LPDDR3 @ 2133MHz",
+        "gpu": "Intel UHD Graphics",
+        "display": "13.3 in / 1920 x 1080",
+        "battery":"~19 hrs",
+        "weight":"2.56 lb",
+        "ports": "1x MicroSD, 1x USB-C 3.1, 1x headphone, 2x Thunderbolt 3"
+    },
+    {
+        "img" : "assets/images/dell.png",
+        "name": "Dell XPS 13",
+        "specs": "i5-10210U @ 4.2GHz | 256 GB SSD | 8 GB LPDDR3 @ 2133MHz",
+        "gpu": "Intel UHD Graphics",
+        "display": "13.3 in / 1920 x 1080",
+        "battery":"~19 hrs",
+        "weight":"2.56 lb",
+        "ports": "1x MicroSD, 1x USB-C 3.1, 1x headphone, 2x Thunderbolt 3"
+    },
+    {
+        "img" : "assets/images/dell.png",
+        "name": "Dell XPS 13",
+        "specs": "i5-10210U @ 4.2GHz | 256 GB SSD | 8 GB LPDDR3 @ 2133MHz",
+        "gpu": "Intel UHD Graphics",
+        "display": "13.3 in / 1920 x 1080",
+        "battery":"~19 hrs",
+        "weight":"2.56 lb",
+        "ports": "1x MicroSD, 1x USB-C 3.1, 1x headphone, 2x Thunderbolt 3"
+    },
+    {
+        "img" : "assets/images/dell.png",
+        "name": "Dell XPS 13",
+        "specs": "i5-10210U @ 4.2GHz | 256 GB SSD | 8 GB LPDDR3 @ 2133MHz",
+        "gpu": "Intel UHD Graphics",
+        "display": "13.3 in / 1920 x 1080",
+        "battery":"~19 hrs",
+        "weight":"2.56 lb",
+        "ports": "1x MicroSD, 1x USB-C 3.1, 1x headphone, 2x Thunderbolt 3"
+    }
+    
+]}
+
