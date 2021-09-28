@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e405f0d8-5388-4aba-a538-8c9baf8cb370" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1kL2H5hwgAYW9aIP3GrRtYrYHaI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="io.flutter.reload.alreadyRun" value="true" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="test_main" type="FlutterRunConfigurationType" factoryName="Flutter">
+      <option name="filePath" value="$PROJECT_DIR$/main_page/lib/main.dart" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e405f0d8-5388-4aba-a538-8c9baf8cb370" name="Default Changelist" comment="" />
+      <created>1605465459794</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605465459794</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/main_page" />
+    </ignored-roots>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="170" y="146" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605468987329">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state x="170" y="146" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1680.1025@0.25.1680.1025" timestamp="1605468987329" />
+    <state x="540" y="511" key="#com.intellij.ide.util.TreeFileChooserDialog" timestamp="1605473886831">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state x="540" y="511" key="#com.intellij.ide.util.TreeFileChooserDialog/0.25.1680.1025@0.25.1680.1025" timestamp="1605473886831" />
+    <state x="489" y="277" key="#test_main" timestamp="1605473888534">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state x="489" y="277" key="#test_main/0.25.1680.1025@0.25.1680.1025" timestamp="1605473888534" />
+    <state width="528" height="277" key="GridCell.Tab.0.bottom" timestamp="1605470203447">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state width="528" height="277" key="GridCell.Tab.0.bottom/0.25.1680.1025@0.25.1680.1025" timestamp="1605470203447" />
+    <state width="528" height="277" key="GridCell.Tab.0.center" timestamp="1605470203447">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state width="528" height="277" key="GridCell.Tab.0.center/0.25.1680.1025@0.25.1680.1025" timestamp="1605470203447" />
+    <state width="528" height="277" key="GridCell.Tab.0.left" timestamp="1605470203446">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state width="528" height="277" key="GridCell.Tab.0.left/0.25.1680.1025@0.25.1680.1025" timestamp="1605470203446" />
+    <state width="528" height="277" key="GridCell.Tab.0.right" timestamp="1605470203447">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state width="528" height="277" key="GridCell.Tab.0.right/0.25.1680.1025@0.25.1680.1025" timestamp="1605470203447" />
+    <state x="255" y="174" key="SettingsEditor" timestamp="1605468790394">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state x="255" y="174" key="SettingsEditor/0.25.1680.1025@0.25.1680.1025" timestamp="1605468790394" />
+    <state x="799" y="455" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605465741473">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state x="799" y="455" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.25.1680.1025@0.25.1680.1025" timestamp="1605465741473" />
+    <state x="625" y="247" key="run.anything.popup" timestamp="1605468228553">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state x="625" y="247" key="run.anything.popup/0.25.1680.1025@0.25.1680.1025" timestamp="1605468228553" />
+  </component>
+</project>
