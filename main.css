@@ -8,6 +8,7 @@ body {
   transform-style: preserve-3d;
   overflow-x: hidden;
   overflow-y: scroll;
+  filter: saturate(90%);
 }
 
 * {
